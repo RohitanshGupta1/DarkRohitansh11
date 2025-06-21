@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RareyYT Official Links</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      margin-top: 80px;
+      color: darkblue;
+      text-shadow: 0 0 10px #0055ff;
+    }
+
+    .links {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link-button {
+      background-color: #111;
+      color: #0ff;
+      padding: 15px 30px;
+      border: 2px solid #0ff;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      width: 80%;
+      max-width: 400px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .link-button:hover {
+      background-color: #0ff;
+      color: #000;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    .link-button:active {
+      animation: clickPop 0.2s ease;
+    }
+
+    @keyframes clickPop {
+      0% { transform: scale(1); }
+      50% { transform: scale(0.95); }
+      100% { transform: scale(1); }
+    }
+
+    .footer {
+      margin-top: 100px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title">RareyYT</div>
+
+  <div class="links">
+    <a class="link-button" href="https://youtube.com/@incrediblebaccha.yt1?si=8yk9jyOAvJXYDQ8I" target="_blank" onclick="playSound()">YouTube: IncredibleBaccha</a>
+    <a class="link-button" href="https://youtube.com/@therareyextra_official?si=XAIhkMzTIbUiNGp7" target="_blank" onclick="playSound()">YouTube: Rarey Extra</a>
+    <a class="link-button" href="https://linktr.ee/Itzxrohitskills" target="_blank" onclick="playSound()">Linktree</a>
+    <a class="link-button" href="https://www.facebook.com/share/1Gbh3BrbMH/" target="_blank" onclick="playSound()">Facebook</a>
+    <a class="link-button" href="https://www.instagram.com/rohitansh590/" target="_blank" onclick="playSound()">Instagram</a>
+  </div>
+
+  <div class="footer">
+    Created by DarkRohitanshX | © 2025
+  </div>
+
+  <!-- Sound Script -->
+  <script>
+    // Base64 encoded click sound (short pop)
+    const clickSound = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA=");
+    function playSound() {
+      clickSound.currentTime = 0;
+      clickSound.play();
+    }
+  </script>
+
+</body>
+</html>
